@@ -18,6 +18,10 @@ jobs:
           
       - name: Install Dependencies
         run: npm install
+      
+      - name: generate primsa client
+        run: npm run db:generate
+      
         
       - name: Run Build
         run: npm run build
